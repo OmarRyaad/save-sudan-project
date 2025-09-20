@@ -1,0 +1,14 @@
+{
+  "header": {
+    "links": {
+      "home": "Home",
+      "about": "About the Campaign",
+      "timeline": "Timeline",
+      "videos": "Videos",
+      "articles": "Articles",
+      "partners": "Partners"
+    },
+    "login": "Log In",
+    "logo_alt": "Saudi Logo"
+  }
+}
