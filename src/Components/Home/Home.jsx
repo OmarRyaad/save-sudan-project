@@ -1,18 +1,19 @@
 import { Play } from "lucide-react";
 import MainCard from "../MainCard/MainCard";
 import { Image } from "lucide-react";
-import MainHeader from "../MainHeader/MainHeader";
 import Timeline from "../Timeline/Timeline";
 import MainVideo from "../MainVideo/MainVideo";
 import Articles from "../Articles/Articles";
+import Footer from "../Footer/Footer";
+import HeroSection from "../HeroSection/HeroSection";
 
 const Home = () => {
   const timelineData = [
-    { year: "2000", text: "إعداد الدراسات الأولية لتطوير الذكاء الاصطناعي" },
-    { year: "2005", text: "بدء الاعداد لإطلاق الشركة الأم" },
-    { year: "2010", text: "إطلاق الشركة الأم لتطوير الذكاء الاصطناعي" },
-    { year: "2023", text: "بدء المشروع النهائي لتطوير الذكاء الاصطناعي" },
-    { year: "2025", text: "نهاية المشروع النهائي لتطوير الذكاء الاصطناعي" },
+    { year: "2000", text: "إطلاق أول مبادرة إغاثية مشتركة" },
+    { year: "2005", text: "تنظيم قوافل غذائية إلي المناطق النائية" },
+    { year: "2010", text: "إدخال الدعم الطبي كجزء أساسي من الحملات" },
+    { year: "2023", text: "إطلاق حملة قوافل إنقاذ السودان" },
+    { year: "2025", text: "توسيع نطاق الحملة لتشمل ولايات جديدة" },
   ];
   return (
     <>
@@ -26,7 +27,7 @@ const Home = () => {
           </h3>
           <p className="text-gray-700 mb-2 text-sm sm:text-base leading-relaxed">
             معا نمد يد العون إلي أهلنا في السودان عبر قوافل إنسانية تحمل الغذاء
-            والدواء والمستلزمات الأساسية.
+            والدواء والمستلزمات الأساسية
           </p>
           <p className="text-gray-700 mb-4 sm:mb-5 text-sm sm:text-base">
             ساهم معنا كل يوم لتكون جزء من الأمل
@@ -38,7 +39,7 @@ const Home = () => {
       </div>
       {/* الشركاء */}
       <div dir="rtl">
-        <MainHeader text="الشركاء" />
+        <HeroSection text="الشركاء" />
         <div className="flex flex-col sm:flex-row justify-around pt-6 sm:pt-8 pb-12 sm:pb-16 gap-6 sm:gap-4 px-4 sm:px-6">
           <MainCard
             icon={Image}
@@ -59,19 +60,20 @@ const Home = () => {
       </div>
       {/* الخط الزمني */}
       <div dir="rtl">
-        <MainHeader text="الخط الزمني" />
+        <HeroSection text="الخط الزمني" />
         <div className="flex flex-col sm:flex-row justify-around pt-6 sm:pt-8 pb-12 sm:pb-16 lg:pb-[150px] gap-6 sm:gap-4 px-4 sm:px-6">
           <Timeline timelineData={timelineData} />
         </div>
       </div>
       {/* المستفيدين */}
-      <div>
-        <h1 className="font-bold text-2xl sm:text-3xl w-fit mx-auto pb-11 pt-11 sm:pt-16 lg:pb-[100px] text-center">
+      <div className="px-4">
+        <h1 className="font-bold text-2xl sm:text-3xl w-fit mx-auto sm:pb-11 sm:pt-16 text-center">
           أكثر من 50,356 مستفيد من الحملة الإغاثية
         </h1>
+
         <div
           dir="rtl"
-          className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-4 px-4 sm:px-6 pt-6 sm:pt-8 pb-12 sm:pb-16 lg:pb-[150px] max-w-7xl mx-auto"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 px-2 sm:px-6 pt-6 sm:pt-10 pb-12 sm:pb-16 lg:pb-[150px] max-w-7xl mx-auto"
         >
           <MainCard
             icon={Image}
@@ -117,19 +119,21 @@ const Home = () => {
           />
         </div>
       </div>
+
       {/* الفيديوهات */}
-      <div dir="rtl">
-        <MainHeader text="الفيديوهات" />
-        <div className="flex pt-11 pb-11">
+      <div dir="rtl" className="px-6">
+        <HeroSection text="الفيديوهات" />
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pt-11 pb-11">
           <MainVideo text="رحلة القوافل إلى المناطق المتضررة" />
           <MainVideo text="شهادات من المستفيدين" />
           <MainVideo text="كيف يمكنك المساهمة في الحملة؟" />
         </div>
       </div>
+
       {/* المقالات */}
-      <div dir="rtl">
-        <MainHeader text="المقالات" />
-        <div className="flex pt-11 pb-11">
+      <div dir="rtl" className="px-6">
+        <HeroSection text="المقالات" />
+        <div className="flex flex-col md:flex-row md:flex-wrap gap-8 pt-11 pb-11">
           <Articles
             title={"اقرأ اَخر المقالات والتقارير عن الحملة"}
             desc={
@@ -149,6 +153,29 @@ const Home = () => {
             }
           />
         </div>
+      </div>
+
+      {/* الشركاء والداعمين */}
+      <div dir="rtl" className="mt-[100px] px-6">
+        <HeroSection text="الشركاء و الداعمين" />
+        <div className="flex flex-col mt-[50px] mb-[100px] md:flex-row md:flex-wrap justify-center gap-6 md:gap-10 p-6">
+          <h3 className="w-full sm:w-auto text-center px-8 py-4 text-white bg-gray-500 rounded-lg">
+            منظمات إنسانية محلية
+          </h3>
+          <h3 className="w-full sm:w-auto text-center px-8 py-4 text-white bg-gray-500 rounded-lg">
+            اليونيسف
+          </h3>
+          <h3 className="w-full sm:w-auto text-center px-8 py-4 text-white bg-gray-500 rounded-lg">
+            برنامج الغذاء العالمي
+          </h3>
+          <h3 className="w-full sm:w-auto text-center px-8 py-4 text-white bg-gray-500 rounded-lg">
+            الهلال الأحمر
+          </h3>
+        </div>
+      </div>
+      {/* Footer */}
+      <div className="pt-11 pb-11">
+        <Footer />
       </div>
     </>
   );
