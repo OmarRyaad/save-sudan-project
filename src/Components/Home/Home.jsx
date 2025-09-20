@@ -23,8 +23,15 @@ const Home = () => {
     <div dir={t("dir")}>
       {/* Campaign Section */}
       <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12 lg:gap-16 py-8 px-4 sm:px-6 lg:px-8">
-        <div className="relative w-full max-w-[300px] sm:max-w-[350px] h-[180px] sm:h-[200px] bg-gray-200 rounded-lg flex items-center justify-center">
-          <Play className="w-8 h-8 sm:w-10 sm:h-10 text-gray-800" />
+        <div className="relative w-full max-w-[300px] sm:max-w-[350px] h-[180px] sm:h-[200px] rounded-lg overflow-hidden">
+          <iframe
+            className="w-full h-full"
+            src="https://www.youtube.com/embed/cd3tVixZAu4?si=E_dfeXKTz62I-1o0"
+            title="دعم قوافل إنقاذ السودان"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
         </div>
         <div
           className={`text-${t("textAlign")} max-w-sm sm:max-w-md mt-6 md:mt-0`}
@@ -125,9 +132,18 @@ const Home = () => {
       <div className="px-6">
         <HeroSection text={t("home.sections.videos")} />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pt-11 pb-11">
-          <MainVideo text={t("home.videos.journey")} />
-          <MainVideo text={t("home.videos.testimonials")} />
-          <MainVideo text={t("home.videos.contribute")} />
+          <MainVideo
+            videoId="cd3tVixZAu4?si=E_dfeXKTz62I-1o0"
+            text={t("home.videos.journey")}
+          />
+          <MainVideo
+            videoId="cd3tVixZAu4?si=E_dfeXKTz62I-1o0"
+            text={t("home.videos.testimonials")}
+          />
+          <MainVideo
+            videoId="FQpLcZ1iJ88?si=jWheQfD_k03OG4lB"
+            text={t("home.videos.contribute")}
+          />
         </div>
       </div>
 
