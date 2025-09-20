@@ -1,4 +1,5 @@
 import { Image } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const MainCard = ({
   imgSrc,
@@ -7,8 +8,15 @@ const MainCard = ({
   description,
   isBox,
 }) => {
+  const { t, i18n } = useTranslation();
+
   const content = (
-    <div className="flex justify-center items-center space-x-reverse space-x-3 sm:space-x-4 p-3 sm:p-4">
+    <div
+      dir={
+        t("dir") !== "dir" ? t("dir") : i18n.language === "ar" ? "rtl" : "ltr"
+      }
+      className="flex justify-center items-center space-x-3 sm:space-x-4 p-3 sm:p-4"
+    >
       <div className="flex-shrink-0">
         {imgSrc && (
           <div className="bg-gray-200 rounded-full p-2 sm:p-3">
@@ -30,11 +38,18 @@ const MainCard = ({
           </div>
         )}
       </div>
-      <div className="flex-1 text-right pr-3 sm:pr-4">
+      <div
+        className="flex-1"
+        style={{
+          textAlign: t("textAlign"),
+          paddingRight: t("textAlign") === "right" ? "0.75rem" : "0",
+          paddingLeft: t("textAlign") === "left" ? "0.75rem" : "0",
+        }}
+      >
         <h3 className="font-bold text-xs sm:text-sm lg:text-base truncate">
           {title}
         </h3>
-        <p className="text-gray-600 text-xs sm:text-sm lg:text-base line-clamp-2">
+        <p className="text-gray-600 mt-1 text-xs sm:text-sm lg:text-base line-clamp-2">
           {description}
         </p>
       </div>

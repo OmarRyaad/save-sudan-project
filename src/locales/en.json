@@ -1,4 +1,6 @@
 {
+  "dir": "ltr",
+  "textAlign": "left",
   "header": {
     "links": {
       "home": "Home",
@@ -10,5 +12,121 @@
     },
     "login": "Log In",
     "logo_alt": "Saudi Logo"
+  },
+  "home": {
+    "campaign": {
+      "title": "Sudan Relief Convoys Support Campaign",
+      "description1": "Together, we extend a helping hand to our people in Sudan through humanitarian convoys carrying food, medicine, and essential supplies.",
+      "description2": "Contribute with us every day to be part of the hope.",
+      "donateButton": "Donate Now"
+    },
+    "sections": {
+      "partners": "Partners",
+      "timeline": "Timeline",
+      "videos": "Videos",
+      "articles": "Articles",
+      "partnersSupporters": "Partners and Supporters"
+    },
+    "partners": {
+      "who": {
+        "title": "World Health Organization",
+        "description": "Providing medicines and medical supplies"
+      },
+      "wfp": {
+        "title": "World Food Programme",
+        "description": "Providing essential food supplies"
+      },
+      "redCrescent": {
+        "title": "Red Crescent",
+        "description": "Medical support and first aid"
+      }
+    },
+    "timeline": {
+      "2000": "Launch of the first joint relief initiative",
+      "2005": "Organizing food convoys to remote areas",
+      "2010": "Introducing medical support as a core part of campaigns",
+      "2023": "Launch of the Sudan Rescue Convoys campaign",
+      "2025": "Expanding the campaign to include new states"
+    },
+    "beneficiaries": {
+      "title": "More than {{count}} beneficiaries of the relief campaign",
+      "food": {
+        "title": "41% Food",
+        "description": "Meals and essential food supplies"
+      },
+      "medicine": {
+        "title": "25% Medicine",
+        "description": "Providing medicines and medical treatments"
+      },
+      "water": {
+        "title": "14% Clean Water",
+        "description": "Water supplies for drinking and daily use"
+      },
+      "shelter": {
+        "title": "13% Shelter Aid",
+        "description": "Tents and supplies for the displaced"
+      },
+      "psychSupport": {
+        "title": "7% Psychological and Social Support",
+        "description": "Psychological care for children and women"
+      },
+      "children": {
+        "title": "6% Children's Supplies",
+        "description": "Baby formula, diapers"
+      }
+    },
+    "videos": {
+      "journey": "Journey of the Convoys to Affected Areas",
+      "testimonials": "Testimonials from Beneficiaries",
+      "contribute": "How Can You Contribute to the Campaign?"
+    },
+    "articles": {
+      "latest": {
+        "title": "Read the Latest Articles and Reports About the Campaign",
+        "description": "Learn about the campaign's efforts, success stories, and volunteers' experiences in supporting those affected in Sudan"
+      },
+      "preparation": {
+        "title": "How Are Relief Convoys Prepared Before Departure?",
+        "description": "We review the stages of preparing convoys, from collecting donations to equipping trucks with medical and food supplies"
+      },
+      "stories": {
+        "title": "Humanitarian Stories from the Heart of Sudan",
+        "description": "Learn about the testimonies of families and individuals whose lives have changed thanks to the aid they received"
+      },
+      "readMore": "Read More",
+      "readLess": "Read Less"
+    },
+    "partnersSupporters": {
+      "localOrgs": "Local Humanitarian Organizations",
+      "unicef": "UNICEF",
+      "wfp": "World Food Programme",
+      "redCrescent": "Red Crescent"
+    },
+    "footer": {
+      "contact": {
+        "title": "Contact Us",
+        "phone": "Phone: +123 400 123",
+        "description1": "A humanitarian campaign aimed at sending relief convoys to support those affected",
+        "description2": "in Sudan through food, medicine, and essential supplies",
+        "email": "Email: Content@gmail.com"
+      },
+      "discover": {
+        "title": "Discover",
+        "home": "Home",
+        "about": "About the Campaign",
+        "timeline": "Timeline",
+        "videos": "Videos",
+        "articles": "Articles",
+        "partners": "Partners"
+      },
+      "legal": {
+        "title": "Legal",
+        "privacy": "Privacy Policy",
+        "terms": "Terms and Conditions",
+        "returns": "Return Policy"
+      },
+      "copyright": "All Rights Reserved © 2025",
+      "bottomLinks": "Privacy Policy | Return Policy"
+    }
   }
 }

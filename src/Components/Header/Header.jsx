@@ -27,7 +27,7 @@ const Header = () => {
     const updateClock = () => {
       const now = new Date();
       const formatted = now.toLocaleTimeString(
-        i18n.language === "en" ? "ar-SA" : "en-US",
+        i18n.language === "en" ? "en-US" : "en-US",
         {
           hour: "2-digit",
           minute: "2-digit",
@@ -73,7 +73,7 @@ const Header = () => {
             onClick={toggleLanguage}
             className="ml-4 px-3 py-1 bg-gray-200 rounded-md hover:bg-gray-300 flex items-center gap-2"
           >
-            {i18n.language === "en" ? "Arabic" : "English"}{" "}
+            {i18n.language === "en" ? "Arabic" : "الإنجليزية"}
             {/* Swapped labels */}
           </button>
         </div>

@@ -5,16 +5,16 @@ import ar from "./locales/ar.json";
 import en from "./locales/en.json";
 
 i18n
-  .use(LanguageDetector) // Detects browser language
-  .use(initReactI18next) // Bind i18next to React
+  .use(LanguageDetector)
+  .use(initReactI18next)
   .init({
     resources: {
       ar: { translation: ar },
       en: { translation: en },
     },
-    fallbackLng: "en", // Default language
+    fallbackLng: "en",
     interpolation: {
-      escapeValue: false, // React handles XSS
+      escapeValue: false,
     },
   });
 
